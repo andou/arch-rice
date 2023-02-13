@@ -2,4 +2,4 @@
 
 # Update package list and upgrade all packages afterwards.
 
-sudo pacman -Syu
+sudo pacman -Syu - < pkglist.txt
