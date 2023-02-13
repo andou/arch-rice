@@ -1,5 +1,9 @@
 #!/bin/bash
 
 # Update package list and upgrade all packages afterwards.
-
-sudo pacman -Syu - < pkglist.txt
+sudo pacman -Syu
+# Install Xfce
+sudo pacman -S xfce4 xfce4-goodies
+# Install lightdm and gtk greeter
+sudo pacman -S lightdm lightdm-gtk-greeter --needed
+sudo systemctl enable lightdm
