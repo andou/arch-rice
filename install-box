@@ -2,8 +2,12 @@
 
 # Update package list and upgrade all packages afterwards.
 sudo pacman -Syu
+# 
+sudo pacman -S neovim vi vim --needed
+#
+sudo pacman -S firefox --needed
 # Install Xfce
-sudo pacman -S xfce4 xfce4-goodies
+sudo pacman -S xfce4 xfce4-goodies --needed
 # Install lightdm and gtk greeter
-sudo pacman -S lightdm lightdm-gtk-greeter --needed
+sudo pacman -S --needed lightdm-webkit2-greeter lightdm-webkit-theme-litarvan
 sudo systemctl enable lightdm
